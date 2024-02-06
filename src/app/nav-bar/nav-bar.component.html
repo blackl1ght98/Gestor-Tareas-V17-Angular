@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" [ngClass]="{ 'dark-mode': isDarkMode }">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="tareas">Tareas</a>
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="navbarNav">
+        <!-- Otras etiquetas del menú -->
+        <p *ngIf="welcomeMessage" class="text-center mx-3">{{welcomeMessage}}</p>
+        <!-- Otras etiquetas del menú -->
+      </div>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="registro"><i class="bi bi-person-add"></i>Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login"><i class="bi bi-person "></i>Login</a>
+          <!-- navbar.component.html -->
+          <!-- app.component.html -->
+
+        </li>
+      </ul>
+      <!------------------------------------------------------------>
+      <button class="btn btn-primary" (click)="toggleDarkMode()">
+        <i class="bi bi-brightness-high-fill"></i> Modo oscuro
+      </button>
+
+
+
+
+
+
+    </div>
+
+  </div>
+</nav>

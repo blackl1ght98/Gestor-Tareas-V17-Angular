@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "gestortareas",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
