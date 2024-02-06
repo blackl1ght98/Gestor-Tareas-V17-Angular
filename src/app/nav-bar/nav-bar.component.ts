@@ -8,6 +8,11 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
+  /**
+   * Indica que este componente es independiente y no necesita ser declarado en un NgModule.
+   * Gestiona sus propias dependencias de plantilla a través de la propiedad 'imports'.
+   */
+
   standalone: true,
   //Ahora en la version 17 de angular no se importa lo que necesitamos en modulos por separado
   //como para el manejo de rutas antes se importaba el approutingmodule en el modulo principal,

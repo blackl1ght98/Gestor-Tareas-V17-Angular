@@ -12,6 +12,11 @@ import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-registro',
+  /**
+   * Indica que este componente es independiente y no necesita ser declarado en un NgModule.
+   * Gestiona sus propias dependencias de plantilla a través de la propiedad 'imports'.
+   */
+
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './registro.component.html',
